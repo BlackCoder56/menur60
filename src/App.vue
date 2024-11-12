@@ -72,20 +72,23 @@ nav {
   display: flex;
   justify-content: center; /* Center the nav-center container */
   z-index: 1000;
-  transition: background-color 0.3s ease;
+  background-color: #fff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background color and shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for visibility on white pages */
+  border-bottom: 1px solid #ddd; /* Light border for added definition */
 }
 
 /* Center wrapper for logo and links */
 .nav-center {
   display: flex;
   align-items: center;
-  gap: 250px; /* Increased gap between logo and links */
+  gap: 300px; /* Increased gap between logo and links */
 }
 
 /* Style for links in the nav-links container */
 .nav-links {
   display: flex;
-  gap: 15px; /* Space between nav links */
+  gap: 20px; /* Space between nav links */
 }
 
 nav a {

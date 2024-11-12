@@ -1,7 +1,9 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HomeComponent msg="Welcome to Your Vue.js App"/>
+    <HomeComponent />
+  </div>
+  <div class="about">
+    <AboutComponent />
   </div>
 </template>
 
@@ -9,11 +11,25 @@
 // @ is an alias to /src
 // import HelloWorld from '@/components/.vue'
 import HomeComponent from '@/components/HomeComponent.vue'
+import AboutComponent from '@/components/AboutComponent.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
   }
 }
 </script>
+
+<style>
+.home{
+  width: 100%;
+  padding-bottom: 35px;
+}
+
+.about{
+  /* background-color: red; */
+  width: 100%;
+}
+</style>

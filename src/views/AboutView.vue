@@ -1,5 +1,23 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  
+  <AboutComponent />
 </template>
+
+<script>
+// @ is an alias to /src
+// import HelloWorld from '@/components/.vue'
+import AboutComponent from '@/components/AboutComponent.vue'
+
+export default {
+  name: 'AboutView',
+  components: {
+    AboutComponent,
+  }
+}
+</script>
+
+<style>
+.home{
+  width: 100%;
+}
+</style>
